@@ -11,20 +11,29 @@
     o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),
     p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","65738378-bd4e-4d5f-b6b2-a7dc38240cfe")
     </script>
+    
+    
+    <script>
+        window.onload = function () {
+            document.getElementById('login').addEventListener('click', function () {
+                AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_login'});
+            });
+        }
+        
+        window.onload = function () {
+            document.getElementById('register').addEventListener('click', function () {
+                AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_register'});
+            });
+        }
+    </script>
   </head>
   
   <body>
     <h3>DevilishBoi Test of AF's PBA PRoduct</h3>
   
-    <form>
-        <fieldset>
-          <label for="rev">Revenue</label>
-          <input type="number" id="rev" step="1.00" min="1.0" max="49.99" value="4.99">
-          
-          <label for="submit">Submit</label>
-          <input type="submit" id="submit">
-        </fieldset>
-    </form>
+    <button type="button" id="register">Sign Up</button>
+    <button type="button" id="login">Log in</button>
+
   </body>
 
 </html>
