@@ -19,7 +19,9 @@
                 AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_login'});
             });
         }
-        
+    </script>
+    
+    <script>
         window.onload = function () {
             document.getElementById('register').addEventListener('click', function () {
                 AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_register'});
