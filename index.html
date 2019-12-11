@@ -19,8 +19,12 @@
                 AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_register'});
             });
 
+	    document.getElementById('purchase').addEventListener('click', function () {
+                AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_purchase'});
+            });
+		
             document.getElementById('login').addEventListener('click', function () {
-                AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_login'});
+                AF('pba', 'event', {eventType: 'IDENTIFY', customUserId: 'devilish'});
             });
         }
     </script>
@@ -33,6 +37,8 @@
     <button type="button" id="register">Sign Up</button>
     <br>
     <button type="button" id="login">Log in</button>
+    <br>
+    <button type="button" id="purchase">BUY!</button>
 
     <footer>
 	<hr>
