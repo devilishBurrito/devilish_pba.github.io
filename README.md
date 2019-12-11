@@ -17,13 +17,13 @@
     <h3>DevilishBoi Test of AF's PBA PRoduct</h3>
   
     <form>
-        <dataset>
+        <fieldset>
           <label for="rev">Revenue</label>
           <input type="number" id="rev" step="1.00" min="1.0" max="49.99" value="4.99">
           
           <label for="submit">Submit</label>
           <input type="submit" id="submit">
-        </dataset>
+        </fieldset>
     </form>
   </body>
 
