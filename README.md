@@ -14,14 +14,11 @@
     
     <script>
         window.onload = function () {
+        
             document.getElementById('register').addEventListener('click', function () {
                 AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_register'});
             });
-        }
-    </script>
-    
-    <script>
-        window.onload = function () {
+
             document.getElementById('login').addEventListener('click', function () {
                 AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_login'});
             });
