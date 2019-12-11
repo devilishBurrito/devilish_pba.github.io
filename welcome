@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	  <title>Buy Nothing</title>
+    
+    <!-- AppsFlyer web SDK -->
+    <script>
+    !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){
+    (t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},
+    t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
+    o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),
+    p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","65738378-bd4e-4d5f-b6b2-a7dc38240cfe")
+    </script>
+    
+  </head>
+
+	<body>
+		<h1>DevilishBoi's Nothing Store</h1>
+		<p>Hi and welcome to the Nothing shop. things are a bit messy while we get set up. I'll keep ya updated</p>
+		<hr>
+		<h2>About Me</h2>
+		<img src="img/raccoon.jpg">
+		<table>
+			<datafield>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Genger</th>
+					<th>Location</th>
+				</tr>
+
+				<tr>
+					<td>Devilish</td>
+					<td>N/A</td>
+					<td>Male</td>
+					<td>CA,USA</td>
+				</tr>
+			</datafield>
+		</table>
+
+		<hr>
+		<h3>Food I like to eat</h3>
+		<ul>
+			<li>Ramen</li>
+			<li>Pizza</li>
+			<li>Peanut Butter</li>
+			<li>Burgers</li>
+			<li>Tacos</li>
+		</ul>
+
+		<p>Check out <a href="http://www.devilishboi.com">my blog</a> if you've got some time!</p>
+		
+		<form>
+			<fieldset>
+				<legend>Send Me An Email:</legend>
+				<label>Subject</label>
+				<input type="text" placeholder="Hi, nice to meet you!"><br>
+				<label>Email:</label>
+				<input type="password"><br>
+				<label>Message:</label><br>
+				<textarea rows="10" cols="50"></textarea><br>
+				<input type="submit"value="Submit Email">
+			</fieldset>
+		</form>
+
+		<footer>
+			<hr>
+			<nav>
+				<ul>
+					<li><a href="index.html">Index</a></li>
+					<li><a href="basic_structure.html">Basics</a></li>
+				</ul>
+			</nav>
+			<small> &copy; 2019 &mdash;Joe Williams</small>
+		</footer>
+	</body>
+</html>
