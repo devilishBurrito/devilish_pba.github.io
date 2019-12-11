@@ -12,6 +12,13 @@
     p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","65738378-bd4e-4d5f-b6b2-a7dc38240cfe")
     </script>
     
+    <script>
+        window.onload = function () {
+            document.getElementById('register').addEventListener('click', function () {
+                AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_register'});
+            });
+        }
+    </script>
     
     <script>
         window.onload = function () {
@@ -21,19 +28,13 @@
         }
     </script>
     
-    <script>
-        window.onload = function () {
-            document.getElementById('register').addEventListener('click', function () {
-                AF('pba', 'event', {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'af_register'});
-            });
-        }
-    </script>
   </head>
   
   <body>
     <h3>DevilishBoi Test of AF's PBA PRoduct</h3>
   
     <button type="button" id="register">Sign Up</button>
+    <br>
     <button type="button" id="login">Log in</button>
 
   </body>
